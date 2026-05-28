@@ -7,4 +7,4 @@ metadata:
     app: user-ui
 data:
   .env: |
-      REACT_APP_API_URL= http://13.203.78.179:32001
+      REACT_APP_API_URL= http://3.10.232.233:32000

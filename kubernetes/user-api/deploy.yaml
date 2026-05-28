@@ -19,7 +19,7 @@ spec:
       nodeSelector:
         module: user
       containers:
-      - image: 585768154650.dkr.ecr.ap-south-1.amazonaws.com/user-api:1.0
+      - image: 330177108585.dkr.ecr.eu-west-2.amazonaws.com/user-api:1.0
         name: user-api
         securityContext:
           runAsNonRoot: true
@@ -34,7 +34,7 @@ spec:
               secretKeyRef:
                 name: user-api-secrets
                 key: connectionstring
-          - name: PORT 
+          - name: PORT
             value: "1025"
           - name: ADMIN_EMAIL
             value: admin@deekshithsn.co.in
@@ -57,5 +57,3 @@ spec:
             port: 1025
           initialDelaySeconds: 30
           timeoutSeconds: 10
-        
-      

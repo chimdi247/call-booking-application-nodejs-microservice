@@ -1,5 +1,5 @@
-db-node --> 2 cpu & 16gb
+db-node --> 2 cpu & 8gb  m7i-flex.large
 
-admin-node --> 4 cpu & 16 Gb 
+admin-node --> 2 cpu & 8Gb   m7i-flex.large
 
-user --> 8 & 32gb
+user --> 2cpu & 8gb    m7i-flex.large

@@ -35,9 +35,9 @@ spec:
                 key: dbpass
         resources:
           requests:
-            memory: "2Gi"
+            memory: "1Gi"
             cpu: "1000m"
-          limits: 
+          limits:
             memory: "8Gi"
             cpu: "1500m"
         readinessProbe:

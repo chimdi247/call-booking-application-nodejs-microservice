@@ -17,9 +17,9 @@ spec:
         module: admin
     spec:
       nodeSelector:
-        mdoule: admin
+        module: admin
       containers:
-      - image: 585768154650.dkr.ecr.ap-south-1.amazonaws.com/admin-api:1.0
+      - image: 330177108585.dkr.ecr.eu-west-2.amazonaws.com/admin-api:1.0
         name: admin-api
         securityContext:
           runAsNonRoot: true
@@ -34,7 +34,7 @@ spec:
               secretKeyRef:
                 name: admin-api-secrets
                 key: connectionstring
-          - name: PORT 
+          - name: PORT
             value: "1025"
         resources:
           requests:
@@ -55,5 +55,3 @@ spec:
             port: 1025
           initialDelaySeconds: 30
           timeoutSeconds: 10
-        
-      
